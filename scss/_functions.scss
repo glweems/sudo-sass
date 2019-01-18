@@ -1,0 +1,21 @@
+@each $key,
+$value in $colors {
+   .text-#{$key} {
+      color: $value;
+   }
+   .bg-#{$key} {
+      background: $value;
+	}
+}
+
+@each $key in $headings {
+	#{$key} {
+		font-family: $header-font;
+	} 
+}
+
+.heading {
+	font-weight: 600;
+	font-size: $base-font-size * 3;
+	text-align: center;
+}
