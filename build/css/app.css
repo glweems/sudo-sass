@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+.text-primary {
+  color: #3372e9; }
+
+.bg-primary {
+  background: #3372e9; }
+
+.text-light {
+  color: #d9dbdf; }
+
+.bg-light {
+  background: #d9dbdf; }
+
+.text-secondary {
+  color: #98999b; }
+
+.bg-secondary {
+  background: #98999b; }
+
+.text-dark {
+  color: #34383f; }
+
+.bg-dark {
+  background: #34383f; }
+
+.text-success {
+  color: #54c47a; }
+
+.bg-success {
+  background: #54c47a; }
+
+.text-danger {
+  color: #b84242; }
+
+.bg-danger {
+  background: #b84242; }
+
+html {
+  width: 100%;
+  margin: 0;
+  padding: none; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: none; }
+
+.container {
+  margin: 0.25em 0.5em;
+  padding: 0.25em 0.75em; }
+
+.container-fluid {
+  padding: 0.25em 0.75em; }
+
+.inline {
+  display: flex;
+  justify-content: center;
+  align-items: baseline; }
+  .inline div {
+    display: flex;
+    width: 100%;
+    padding: 0.25em 0.75em; }
+  .inline h1 {
+    display: flex;
+    width: 100%;
+    padding: 0.25em 0.75em; }
+  .inline h2 {
+    display: flex;
+    width: 100%;
+    padding: 0.25em 0.75em; }
+  .inline h3 {
+    display: flex;
+    width: 100%;
+    padding: 0.25em 0.75em; }
+  .inline h4 {
+    display: flex;
+    width: 100%;
+    padding: 0.25em 0.75em; }
+  .inline h5 {
+    display: flex;
+    width: 100%;
+    padding: 0.25em 0.75em; }
+  .inline h6 {
+    display: flex;
+    width: 100%;
+    padding: 0.25em 0.75em; }
+  .inline p {
+    display: flex;
+    width: 100%;
+    padding: 0.25em 0.75em; }
+
+.verticle {
+  flex-direction: column; }

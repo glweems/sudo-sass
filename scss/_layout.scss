@@ -1,0 +1,39 @@
+html {
+	width: 100%;
+	margin: 0;
+	padding: none;
+}
+
+body {
+	font-family: $font-family;
+	width: 100%;
+	margin: 0;
+	padding: none;
+}
+
+.container {
+  @include margin;
+  @include padding;
+//   @include border-radius
+}
+
+.container-fluid {
+  @include padding;
+}
+
+.inline {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  @each $element in $elements {
+	  #{$element} {
+		display: flex;
+		width: 100%;
+		@include padding;
+	  }
+  }
+}
+
+.verticle {
+  flex-direction: column;
+}

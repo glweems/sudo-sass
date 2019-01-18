@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+$font-family: "Roboto", sans-serif;
+
+$base-line-height: 1;
+
+$colors: (
+    primary: rgb(51, 114, 233),
+    light: #d9dbdf,
+    secondary: rgb(152, 153, 155),
+    dark: #34383f,
+    success: rgb(84, 196, 122),
+    danger: rgb(184, 66, 66));
+
+$elements: div, h1, h2, h3, h4, h5, h6, p;
+$default-padding: 0.25em 0.75em;
+$default-margin: 0.25em 0.5em;
+$default-radius: .5em;
+
+@each $key,
+$value in $colors {
+   .text-#{$key} {
+      color: $value;
+   }
+   .bg-#{$key} {
+      background: $value;
+   }
+}
+
