@@ -1,14 +1,137 @@
-@mixin padding {
-   padding: $default-padding;
+// Breakpoints
+@mixin breakpoints($breakpoint) {
+   // If the breakpoint exists in the map.
+   @if map-has-key($breakpoints, $breakpoint) {
+      // Get the breakpoint value.
+      $value: map-get($breakpoints, $breakpoint); // Write the media query.
+      @media (min-width: $value) {
+         @content;
+      } // If the breakpoint doesn't exist in the map.
+   }
+   @else {
+      // Log a warning.
+      @warn 'Invalid breakpoint: #{$breakpoint}.';
+   }
 }
 
-@mixin margin {
-   margin: $default-margin;
+// Color Mixins
+@mixin color($color: primary) {
+   color: map-get($colors, $color);
 }
 
-@mixin border-radius($radius: $default-radius) {
-   -moz-border-radius: $radius;
-   -webkit-border-radius: $radius;
-   -ms-border-radius: $radius;
-   border-radius: $radius;
+@mixin background($color: primary) {
+   background: map-get($colors, $color)
+}
+
+// Margin Mixins
+@mixin margin($margin: map-get($defaults, margin)) {
+   margin: $margin;
+}
+
+@mixin margin-x($margin: 1em) {
+   margin-left: $margin;
+   margin-right: $margin;
+}
+
+@mixin margin-y($margin: 1em) {
+   margin-top: $margin;
+   margin-bottom: $margin;
+}
+
+// Padding Mixins
+@mixin padding($padding: map-get($defaults, padding)) {
+   padding: $padding;
+}
+
+@mixin padding-x($padding: 1em) {
+   padding-left: $padding;
+   padding-right: $padding;
+}
+
+@mixin padding-y($padding: 1em) {
+   padding-top: $padding;
+   padding-bottom: $padding;
+}
+
+// Border Radius Mixins
+@mixin border-radius($radius: map-get($defaults, border-radius)) {
+   border-radius: $radius $radius $radius $radius;
+}
+
+@mixin border-radius-bottom($radius: map-get($defaults, border-radius)) {
+   border-radius: 0 0 $radius $radius;
+}
+
+@mixin border-radius-top($radius: map-get($defaults, border-radius)) {
+   border-radius: $radius $radius 0 0;
+}
+
+@mixin border-radius-right($radius: map-get($defaults, border-radius)) {
+   border-radius: 0 $radius $radius 0;
+}
+
+@mixin border-radius-left($radius: map-get($defaults, border-radius)) {
+   border-radius: $radius 0 0 $radius;
+}
+
+@mixin shadow($color: muted) {
+   box-shadow: map-get($colors, $color) 0 4px 10px;
+}
+
+// Border Mixins
+@mixin border($color: dark, $width: map-get($defaults, border-width)) {
+   border: map-get($colors, $color) solid $width;
+}
+
+;
+@mixin border-y($color: dark, $width: map-get($defaults, border-width)) {
+   border-top: map-get($colors, $color) solid $width;
+   border-bottom: map-get($colors, $color) solid $width;
+}
+
+;
+@mixin border-x($color: dark, $width: map-get($defaults, border-width)) {
+   border-left: map-get($colors, $color) solid $width;
+   border-right: map-get($colors, $color) solid $width;
+}
+
+;
+@mixin border-right($color: dark, $width: map-get($defaults, border-width)) {
+   border-right: map-get($colors, $color) solid $width;
+}
+
+;
+@mixin border-left($color: dark, $width: map-get($defaults, border-width)) {
+   border-left: map-get($colors, $color) solid $width;
+}
+
+;
+@mixin border-top($color: dark, $width: map-get($defaults, border-width)) {
+   border-top: map-get($colors, $color) solid $width;
+}
+
+;
+@mixin border-bottom($color: dark, $width: map-get($defaults, border-width)) {
+   border-bottom: map-get($colors, $color) solid $width;
+}
+
+;
+// Reset Mixins
+@mixin space-reset {
+   margin: 0;
+   padding: 0;
+}
+
+@mixin text-reset {
+   @each $key in $text {
+      #{$key} {
+         @include space-reset;
+      }
+   }
+}
+
+@mixin grid-columns($columns: 2, $gap: .5em) {
+   display: grid;
+   grid-template-columns: repeat($columns, 1fr);
+   gap: $gap;
 }

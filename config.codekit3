@@ -58,6 +58,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/package.json": {
+		"ft": 524288,
+		"oA": 0,
+		"oAP": "/build/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/README.md": {
 		"cB": 0,
 		"cS": 0,
@@ -115,6 +123,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/scss/_test.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/css/_test.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/scss/_variables.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -140,6 +161,13 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/typograhy.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/build/typograhy.html",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -151,7 +179,8 @@
 	"displayValue": "sudosass",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-krieger",
-	"iconImageWasSetByUser": 0
+	"iconImageWasSetByUser": 0,
+	"lastBuiltDate": 569537729.50189602
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
