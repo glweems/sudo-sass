@@ -1,34 +1,30 @@
-@each $color, $value in $colors {
+@each $color,
+$value in $colors {
    .text-#{$color} {
       color: $value;
    }
    .bg-#{$color} {
       background: $value;
-	}
+   }
 }
 
 @each $heading in $headings {
-	#{$headings} {
-		font-family: $header-font;
-	} 
+   #{$headings} {
+      font-family: $header-font;
+   }
 }
 
 .heading {
-	font-weight: 600;
-	font-size: $base-font-size * 3;
-	text-align: center;
+   font-weight: 600;
+   font-size: $base-font-size * 3;
+   text-align: center;
 }
 
-@function lighten-color(
-	$color: dark,
-	$percent: map-get($defaults, lighten))
-	{
-	@return lighten(map-get($colors, $color), $percent)
-};
+@function lighten-color( $color: dark, $percent: map-get($defaults, lighten)) {
+   @return lighten(map-get($colors, $color), $percent)
+}
 
-@function darken-color(
-	$color: dark,
-	$percent: map-get($defaults, lighten)) 
-	{
-	@return darken(map-get($colors, $color), $percent)
+;
+@function darken-color( $color: dark, $percent: map-get($defaults, lighten)) {
+   @return darken(map-get($colors, $color), $percent)
 }

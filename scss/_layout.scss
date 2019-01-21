@@ -27,6 +27,11 @@ body {
    padding: none;
 }
 
+.container {
+   margin: 0 auto 0 auto;
+   @include padding;
+}
+
 @each $key,
 $value in $breakpoints {
    @include breakpoints($key) {
@@ -56,11 +61,6 @@ ul {
 img {
    max-width: 100%;
    display: inline;
-}
-
-.container {
-   margin: 0 auto 0 auto;
-   @include padding;
 }
 
 .scroller {

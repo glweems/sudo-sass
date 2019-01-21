@@ -1,0 +1,98 @@
+#grid {
+   @include grid-columns(3);
+}
+
+.navbar {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   height: 4em;
+   @include space-reset;
+   @include padding-x;
+   @include background(primary);
+   a {
+      @include space-reset;
+      align-self: center;
+      margin-right: .5em;
+      font-size: 1.125em;
+      text-decoration: none;
+      text-transform: capitalize;
+      position: relative;
+      transition: 100ms ease-in-out;
+      @include color(light);
+      &:hover {
+         color: darken-color(light, 15%);
+         transform: scale(1.05);
+         @include border-bottom(light, 2px);
+      }
+   }
+   .logo {
+      @include space-reset;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-right: 1em;
+      @include color(white);
+   }
+   nav {
+      @include space-reset;
+      align-items: center;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      .scroll::-webkit-scrollbar {
+         display: none;
+      }
+      a {
+         &:visited {
+            color: darken-color(primary, 30%);
+         }
+         &:last-child {
+            margin-right: 0;
+         }
+      }
+   }
+}
+
+nav::-webkit-scrollbar {
+   display: none;
+}
+
+.dark {
+   @include background(dark);
+   @include color(light);
+   .logo {
+      @include color(light);
+   }
+   nav {
+      a {
+         @include color(muted);
+         &:visited {
+            color: lighten-color(dark, 30%);
+         }
+      }
+   }
+}
+
+.light {
+   @include background(white);
+   .logo {
+      @include color(dark);
+   }
+   nav {
+      a {
+         @include color(primary);
+         &:hover {
+            color: darken-color(primary);
+         }
+         &:visited {
+            color: lighten-color(dark, 30%);
+         }
+      }
+   }
+}
+
+.between {
+   justify-content: space-between;
+}
