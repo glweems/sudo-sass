@@ -38,6 +38,14 @@
    margin-bottom: $margin;
 }
 
+@mixin margin-top($margin: 1em) {
+   margin-top: $margin;
+}
+
+@mixin margin-bottom($margin: 1em) {
+   margin-bottom: $margin;
+}
+
 // Padding Mixins
 @mixin padding($padding: map-get($defaults, padding)) {
    padding: $padding;
@@ -50,6 +58,13 @@
 
 @mixin padding-y($padding: 1em) {
    padding-top: $padding;
+   padding-bottom: $padding;
+}
+
+@mixin padding-top($padding: 1em) {
+   padding-top: $padding;
+}
+@mixin padding-bottom($padding: 1em) {
    padding-bottom: $padding;
 }
 

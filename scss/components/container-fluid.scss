@@ -1,0 +1,17 @@
+.container-fluid {
+   @include padding;
+}
+
+@each $breakpoint,
+$value in $breakpoints {
+   @include breakpoints($breakpoint) {
+      .container-fluid {
+         @each $element in $elements {
+            #{$element} {
+               max-width: $value;
+               @include margin-x(auto)
+            }
+         }
+      }
+   }
+}

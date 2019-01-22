@@ -92,7 +92,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/_functions.css",
+		"oAP": "/build/scss/_functions.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -105,7 +105,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/_layout.css",
+		"oAP": "/build/scss/_layout.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -118,20 +118,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/_mixins.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/scss/_test.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/css/_test.css",
+		"oAP": "/build/scss/_mixins.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -144,7 +131,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/_variables.css",
+		"oAP": "/build/scss/_variables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -156,8 +143,60 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 0,
-		"oAP": "/build/css/app.css",
+		"oA": 2,
+		"oAP": "/build/scss/app.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/components/_button.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/components/_button.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/components/_container.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/components/_container.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/components/_grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/components/_grid.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/components/_index.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/components/_index.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -170,12 +209,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/_navbar.css",
+		"oAP": "/build/scss/components/_navbar.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/scss/components/index.scss": {
+	"/scss/components/card.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -183,7 +222,20 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/index.css",
+		"oAP": "/build/scss/components/card.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/components/container-fluid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/components/container-fluid.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -206,7 +258,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-krieger",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 569537729.50189602
+	"lastBuiltDate": 569797432.51520097
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -1977,13 +2029,13 @@
 		"transpilerStyle": 1
 		},
 	"languageDefaultsCSS": {
-		"autoOutputAction": 2,
+		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0
@@ -2022,7 +2074,7 @@
 		"quality": 100
 		},
 	"languageDefaultsJS": {
-		"autoOutputAction": 0,
+		"autoOutputAction": 1,
 		"autoOutputPathFilenamePattern": "*.js",
 		"autoOutputPathRelativePath": "/min",
 		"autoOutputPathReplace1": "",
@@ -2030,7 +2082,7 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
-		"syntaxCheckerStyle": 3,
+		"syntaxCheckerStyle": 0,
 		"transpilerStyle": 0
 		},
 	"languageDefaultsJSON": {
@@ -2124,10 +2176,10 @@
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
-		"autoOutputPathRelativePath": "css",
+		"autoOutputPathRelativePath": "scss",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 1,
+		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,

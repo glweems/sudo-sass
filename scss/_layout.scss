@@ -1,17 +1,3 @@
-.grid {
-   display: grid;
-   gap: 1em;
-}
-
-.half {
-   grid-template-columns: repeat(2, 1fr);
-}
-
-.thirds {
-   grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: repeat(3, 1fr);
-}
-
 html {
    width: 100%;
    margin: 0;
@@ -25,20 +11,6 @@ body {
    max-width: 100%;
    margin: 0;
    padding: none;
-}
-
-.container {
-   margin: 0 auto 0 auto;
-   @include padding;
-}
-
-@each $key,
-$value in $breakpoints {
-   @include breakpoints($key) {
-      .container {
-         max-width: $value;
-      }
-   }
 }
 
 nav {
@@ -76,10 +48,6 @@ img {
 
 .full-height {
    height: $full-height;
-}
-
-.container-fluid {
-   @include padding;
 }
 
 .inline {

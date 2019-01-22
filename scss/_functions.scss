@@ -9,7 +9,7 @@ $value in $colors {
 }
 
 @each $heading in $headings {
-   #{$headings} {
+   #{$heading} {
       font-family: $header-font;
    }
 }
