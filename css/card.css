@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://use.typekit.net/olo2rze.css");
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #eaecee;
+  margin: 2em; }
+  .card h1 {
+    margin: 0;
+    padding: 0; }
+  .card h2 {
+    margin: 0;
+    padding: 0; }
+  .card h3 {
+    margin: 0;
+    padding: 0; }
+  .card h4 {
+    margin: 0;
+    padding: 0; }
+  .card h5 {
+    margin: 0;
+    padding: 0; }
+  .card h6 {
+    margin: 0;
+    padding: 0; }
+  .card p {
+    margin: 0;
+    padding: 0; }
+  .card .card-img {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1em;
+    position: relative; }
+    .card .card-img .overlay-link {
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 40%; }
+  .card .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    border-bottom: #ffffff solid 1.5px; }
+    .card .header .icon {
+      transition: all 50ms ease-in-out;
+      justify-self: flex-end; }
+      .card .header .icon:hover {
+        transform: scale(1.025); }
+  .card .title {
+    padding-bottom: 0.5em;
+    font-weight: bold;
+    font-size: 1.125em; }
+  .card .body {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em; }
+  .card button {
+    align-self: flex-end;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em; }
+  .card .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    border-top: #ffffff solid 1.5px; }
+    .card .footer .icon {
+      transition: all 50ms ease-in-out;
+      justify-self: flex-end; }
+      .card .footer .icon:hover {
+        transform: scale(1.025); }
+
+/*# sourceMappingURL=card.css.map */

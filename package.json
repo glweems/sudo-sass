@@ -1,24 +1,27 @@
 {
-  "name": "sudosass",
-  "version": "1.0.3",
-  "description": "",
-  "main": "./scss",
-  "dependencies": {
-    "normalize-scss": "^7.0.1"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/glweems/sudo-sass.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/glweems/sudo-sass/issues"
-  },
-  "homepage": "https://github.com/glweems/sudo-sass#readme"
+	"description": "Beautiful elegant css styles.",
+	"version": "1.1.1",
+	"author": "glweems",
+	"license": "ISC",
+	"bugs": {
+		"url": "https:\/\/github.com\/glweems\/sudo-sass\/issues"
+	},
+	"main": "scss/app.scss",
+	"homepage": "https:\/\/github.com\/glweems\/sudo-sass#readme",
+	"keywords": [],
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"normalize-scss": "^7.0.1"
+	},
+	"devDependencies": {},
+	"name": "sudosass",
+	"repository": {
+		"type": "git",
+		"url": "git+https:\/\/github.com\/glweems\/sudo-sass.git"
+	},
+	"files": [
+		"scss/**/*.scss"
+	]
 }

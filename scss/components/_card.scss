@@ -1,0 +1,103 @@
+@import "../variables";
+.card {
+   background-clip: border-box;
+   background-color: #fff;
+   border: 1px solid rgba(0, 0, 0, .125);
+   border-radius: .25rem;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   min-width: 0;
+   overflow-wrap: break-word;
+   position: relative; // @include background(light);
+   // @include padding-x(1em);
+   // @include padding-y(1em);
+   // @include border;
+   @include margin(2em);
+   @include text-reset;
+   .card-img {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 1em;
+      position: relative;
+      .overlay-link {
+         position: absolute;
+         right: 0;
+         left: 0; // top: 20px;
+         top: 40%;
+      }
+   }
+   .header {
+      background-color: rgba(0, 0, 0, .03);
+      border-bottom: 1px solid rgba(0, 0, 0, .125);
+      border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+      box-sizing: border-box;
+      margin-bottom: 0;
+      padding: .75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; // @include padding-x(1em); // @include padding-top(.75em); // @include padding-bottom(.75em); // @include border-bottom(white);
+      .icon {
+         display: none;
+         transition: all 50ms ease-in-out;
+         justify-self: flex-end;
+         &:hover {
+            transform: scale(1.025);
+         }
+      }
+   }
+   .title {
+      // @include padding-x(1.25em);
+      @include padding-bottom(.5em);
+      font-weight: bold;
+      font-size: 1.125em;
+   }
+   .body {
+      box-sizing: border-box;
+      flex: 1 1 auto;
+      padding: 1.25rem;
+   }
+   .link {
+      background-color: transparent;
+      box-sizing: border-box;
+      @include color(primary);
+      margin-left: 1.25rem;
+      text-decoration: none;
+      font-weight: bold;
+      padding-top: 1em !important;
+   }
+   .link:nth-of-type(1) {
+      margin-left: 0;
+   }
+   button {
+      align-self: flex-end;
+      @include margin-x(1em);
+      @include margin-bottom(1em);
+   }
+   .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include padding-x(1em);
+      @include padding-top(.75em);
+      @include padding-bottom(.75em);
+      @include border-top(white);
+      .icon {
+         transition: all 50ms ease-in-out;
+         justify-self: flex-end;
+         &:hover {
+            transform: scale(1.025);
+         }
+      }
+   }
+}
+
+@each $key,
+$value in $breakpoints {
+   @include breakpoints($key) {
+      .card {
+         max-width: $value - $value / 3.5;
+         @include margin-x(auto);
+      }
+   }
+}
