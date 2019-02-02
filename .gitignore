@@ -2,3 +2,4 @@ config.codekit3
 /build
 /node_modules
 /.vscode
+/config.codekit3
