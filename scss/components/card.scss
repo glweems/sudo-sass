@@ -1,0 +1,38 @@
+.card {
+   display: flex;
+   flex-direction: column; // @include border-radius;
+   // @include background(light);
+   // @include padding-x(1em);
+   // @include padding-y(1em);
+   // @include border;
+   @include background(light);
+   @include margin(2em);
+   @include text-reset;
+   .card-img {
+      @include background(danger);
+      margin-bottom: 1em;
+      @include padding-x(1em);
+      @include padding-y(1em); // border-bottom: 2px solid darken-color(light);
+   }
+   .header {
+      @include padding-x(1em);
+      @include padding-top(.75em);
+      @include padding-bottom(.75em);
+      @include border-bottom(secondary);
+   }
+   .title {
+      // @include padding-x(1.25em);
+      @include padding-bottom(.5em);
+      font-weight: bold;
+      font-size: 1.125em;
+   }
+   .body {
+      @include padding-x(1em);
+      @include padding-y(1em);
+   }
+   button {
+      align-self: flex-end;
+      @include margin-x(1em);
+      @include margin-bottom(1em);
+   }
+}
